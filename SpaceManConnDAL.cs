@@ -428,8 +428,8 @@ namespace SpaceManConnectedLayer
         {
             string sqlStr =
            string.Format(
-               "Update Reservation Set RV_Person = '{0}', RV_TimeFrom = '{1}', RV_TimeTo = '{2}' Where RV_ID = '{3}'",
-               rsvObj.Person, rsvObj.TimeFrom, rsvObj.TimeTo, id);
+               "Update Reservation Set RV_Person = '{0}', RV_Date = '{1}', RV_TimeFrom = '{2}', RV_TimeTo = '{3}' Where RV_ID = '{4}'",
+               rsvObj.Person, rsvObj.Date, rsvObj.TimeFrom, rsvObj.TimeTo, id);
             using (SqlCommand cmd = new SqlCommand(sqlStr, this.SqlCn))
             {
                 try
